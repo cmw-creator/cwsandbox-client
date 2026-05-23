@@ -48,7 +48,10 @@ from cwsandbox.exceptions import (
     AsyncFunctionError,
     CWSandboxAuthenticationError,
     CWSandboxError,
+    CWSandboxValidationError,
     DiscoveryError,
+    DiscoveryValidationError,
+    FieldViolation,
     FunctionError,
     ProfileNotFoundError,
     RunnerNotFoundError,
@@ -65,6 +68,7 @@ from cwsandbox.exceptions import (
     SandboxTerminatedError,
     SandboxTimeoutError,
     SandboxUnavailableError,
+    SandboxValidationError,
 )
 
 if TYPE_CHECKING:
@@ -263,8 +267,11 @@ __all__ = [
     "AsyncFunctionError",
     "CWSandboxAuthenticationError",
     "CWSandboxError",
+    "CWSandboxValidationError",
     "DiscoveryError",
+    "DiscoveryValidationError",
     "EgressMode",
+    "FieldViolation",
     "FunctionError",
     "ServiceExposureMode",
     "get_profile",
@@ -299,6 +306,7 @@ __all__ = [
     "SandboxTerminatedError",
     "SandboxTimeoutError",
     "SandboxUnavailableError",
+    "SandboxValidationError",
     "Secret",
     "Session",
     "StreamReader",
